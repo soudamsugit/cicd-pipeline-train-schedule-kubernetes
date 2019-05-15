@@ -47,7 +47,7 @@ pipeline {
                 milestone(1)
                 kubernetesDeploy(
                     kubeConfigId: 'kube_login',
-                    configs: 'train-schedule=kube.yml',
+                    configs: 'train-schedule-kube.yml',
                     enableConfigSubstituion: true
                             )
         }
